@@ -1,0 +1,10 @@
+/**********************
+	MIXINS
+***********************/
+
+@mixin page-wrapper(){
+	@include make-sm-column(10);
+	@include make-sm-column-offset(1);
+	@include make-md-column(8);
+	@include make-md-column-offset(2);
+}

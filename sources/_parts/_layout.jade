@@ -1,0 +1,25 @@
+include _mixins.jade
+doctype html
+| <!--[if lt IE 7]><html class="ie lt-ie10 lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+| <!--[if IE 7]><html class="ie lt-ie10 lt-ie9 lt-ie8 ie7"><![endif]-->
+| <!--[if IE 8]><html class="ie lt-ie10 lt-ie9 ie8"><![endif]-->
+| <!--[if IE 9]><html class="ie lt-ie10 ie9"><![endif]-->
+| <!--[if !IE]><!-->
+html
+	| <!--<![endif]-->
+	block vars
+		- var pageName = "page"
+	include _head.jade
+	body( class= pageName )
+		#wrapper
+			include _header.jade
+			main#main
+				#masthead.hidden-xs
+					.slick-slider
+						img.img-responsive(src='http://placehold.it/1920x500&text=Slide 1', alt='')
+						img.img-responsive(src='http://placehold.it/1920x500&text=Slide 2', alt='')
+						img.img-responsive(src='http://placehold.it/1920x500&text=Slide 3', alt='')
+						img.img-responsive(src='http://placehold.it/1920x500&text=Slide 4', alt='')
+				// #masthead
+				block content
+		include _footer.jade

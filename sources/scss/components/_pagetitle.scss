@@ -1,0 +1,55 @@
+/*
+#H1 Page Title
+
+	<h1 class="page-title">Página genérica</h1>
+
+#As Header
+
+	<header class="page-title">
+		<div class="row">
+			<div class="col-sm-8">
+				<h1>&Uacute;ltimas novedades</h1>
+			</div>
+			<div class="col-sm-4">
+				<a href="#" class="btn-cta btn btn-primary">Ver novedades generales</a>
+			</div>
+		</div>
+	</header>
+
+*/
+
+header.page-title,
+h1.page-title{
+	font-weight: normal;
+	border-bottom: 1px solid #e6e7e8;
+	padding-bottom: 15px;
+	margin-bottom: 15px;	
+	color: $color_title;
+	text-transform: uppercase;
+}
+
+.page-title .cat{
+	color: #339B80;
+	display: block;
+	font-size: .4em;
+	font-weight: normal;
+}
+
+header.page-title .btn{
+	margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+	header.page-title h1{ 
+		border-bottom: 1px solid #e6e7e8;
+		padding-bottom: 15px;
+		margin-bottom: 15px;	
+		
+	}
+	
+	header.page-title .btn-cta{
+		width: 100%;
+		line-height: 32px;
+		margin: 0 !important;
+	}
+}

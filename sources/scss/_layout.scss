@@ -1,0 +1,76 @@
+/************************************
+	LAYOUT
+*************************************/
+body{
+	font-family: 'Open Sans', verdana, sans-serif;
+	color: #6d6e71;
+	
+}
+
+/*	HEADER
+**********************/
+#header{
+	background: $color-5;
+	color: #fff;
+}
+
+#head{
+	padding: 2em 0;
+}
+ 
+#head .column{
+	@include page-wrapper();
+}
+
+
+/*	SIDEBAR
+**********************/
+#sidebar{
+	margin-top: 20px;
+}
+
+#sidebar .wdg{
+	margin-bottom: 15px;
+}
+ 
+
+/*	CONTENT
+***********************/
+#content{
+	margin: 15px 0;
+}
+
+
+/*	FOOT
+**********************/
+#foot{
+	background: $color-5;
+	padding: 2em 0;
+	color: $color-tertiary;
+}
+
+#foot .logo-ltf{
+	font-size: .65em;
+}
+
+#foot #hcard-ctf{
+	margin-top: 1.8em;
+	font-size: .85em;
+}
+
+#foot #hcard-ctf a{
+	color: #fff;
+}
+
+#foot .text-description{
+	font-size: .85em;
+}
+
+#foot .text-description strong{
+	text-transform: uppercase;
+	font-size: .9em;
+}
+
+#foot .share-box{
+	margin-top: 3em;
+}

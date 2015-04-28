@@ -1,0 +1,149 @@
+/*
+#MAIN MENU
+
+```
+<div id="header">
+
+	<div id="main-menu">
+		<nav class="navbar">
+			
+			<div class="navbar-header">
+				<a href="#footer-menu" class="navbar-toggle collapsed">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+			</div>
+		
+			<ul class="nav navbar-nav hidden-xs">
+				<li class="mnu-1"><a href="#">Menu 1</a></li>
+				<li class="mnu-2 active">
+					<a href="#">Menu 2</a>
+					<ul class="submenu">
+						<li class="cat-1"><a href="#">Submenu 1</a></li>
+						<li class="cat-2 active">
+							<a href="#">Submenu 2</a>
+							<ul class="submenu">
+								<li class="sub-1"><a href="#">Submenu 1</a></li>
+								<li class="sub-2 active"><a href="#">Submenu 2</a></li>
+								<li class="sub-3"><a href="#">Submenu 3</a></li>
+								<li class="sub-4"><a href="#">Submenu 4</a></li>
+							</ul>
+						</li>
+						<li class="cat-3"><a href="#">Submenu 3</a></li>
+						<li class="cat-4"><a href="#">Submenu 4</a></li>
+					</ul>
+				</li>
+				<li class="mnu-3"><a href="#">Menu 3</a></li>
+				<li class="mnu-4"><a href="#">Menu 4</a></li>
+			</ul>
+		</nav>
+	</div>
+
+</div>
+```
+*/
+#main-menu{
+	background: $mainmenu-bg;
+	position: relative;
+	z-index: 100;
+}
+
+#main-menu .navbar-toggle .icon-bar{
+	background: #fff;
+}
+
+#main-menu .navbar{
+	margin: 0 0 -1px 0;
+	min-height: 40px;
+}
+
+#main-menu .navbar-collapse{
+	padding: 0;
+}
+
+#main-menu.navbar-nav > li > .mnu-item{
+	padding: 10px 0;
+	margin-top: 2px;
+}
+
+#main-menu .navbar-nav .mnu-item{
+	text-transform: uppercase;
+	padding: .8em 1.2em;
+	font-size: .9em;
+	text-align: center;
+	color: #fff;
+}
+
+#main-menu .navbar-nav .mnu-itema:focus,
+#main-menu .navbar-nav .mnu-item:active,
+#main-menu .navbar-nav li:focus > .mnu-item,
+#main-menu .navbar-nav li:hover > .mnu-item{
+	background: $mainmenu-nav-hover-bg;
+}
+
+#main-menu .navbar-nav>.active > .mnu-item,
+#main-menu .navbar-nav>.active > .mnu-item:focus,
+#main-menu .navbar-nav>.active > .mnu-item:active,
+#main-menu .navbar-nav>.active:focus > .mnu-item,
+#main-menu .navbar-nav>.active:hover > .mnu-item{ 
+	background: $mainmenu-nav-bg;
+}
+
+#main-menu  .navbar-nav {
+	float: none;
+}
+#main-menu  .navbar-nav  > li {
+	width: 16.6%;
+	margin-right: 2px;
+}
+
+
+#main-menu li > .submenu{
+	display: none;
+}
+
+#main-menu .submenu li{
+	position: relative;
+}
+
+#main-menu li > .submenu{
+	position: absolute;
+	top: 35px;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: none;
+	width: 100%;
+}
+
+#main-menu li:hover > .submenu{
+	top:40px;
+	display: block;
+}
+
+#main-menu .navbar-nav .submenu > li.active > .mnu-item{
+	color: $mainmenu-submenu-active;
+}
+
+#main-menu li:hover > .submenu .submenu{
+	top: -2px;
+	left: 100%;
+	padding-left: 2px;
+}
+
+#main-menu li > .submenu  li .mnu-item{
+	display: block;
+	margin-top: 2px;
+	text-decoration: none;
+	text-align: left;
+	padding-left: 1em;
+	padding-right: .1em;
+	background: $mainmenu-submenu-bg;
+}
+
+#main-menu .navbar-nav .submenu > li.active:hover > .mnu-item{
+  color: #fff;
+}

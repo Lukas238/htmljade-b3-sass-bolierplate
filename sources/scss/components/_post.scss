@@ -1,0 +1,126 @@
+/*
+#Post
+```
+<article class="post">
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="thumb">
+				<a href="#">
+					<img src="http://placehold.it/230x180" alt="">
+				</a>
+			</div>
+	  </div>
+	  <div class="col-sm-8">
+			<div class="content">
+				<ul class="meta list-inline">
+					<li class="date"><a href="#">Fecha</a></li>
+					<li class="category"><a href="#">Categoria</a></li>
+				</ul>
+				<h1 class="post-title"><a href="#">Lorem ipsum dolor sit amet.</a></h1><a href="#">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, rem, obcaecati doloremque molestias rerum at quis eaque eveniet dicta itaque totam explicabo. Nesciunt, veritatis, iure, ut architecto harum quidem cum quos suscipit dolorum tempore quae necessitatibus nisi qui quisquam tempora asperiores officiis hic amet minima.</p></a>
+			</div>
+			<a href="page.html" class="btn btn-primary btn-showmore">Leer nota completa</a>
+		</div>
+	</div>
+</article>
+```	
+
+*/
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6{
+	margin-top: 0;
+	color: $color_title;
+}
+
+.post h5{
+	font-weight: bold;
+}
+
+.post p a{
+	border-bottom: 1px solid;
+}
+
+
+.post{
+	margin-bottom: 38px;
+}
+
+.post a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.post .thumb{
+	background: #fff;
+	box-shadow: 0 0 0 2px #e6e7e8;
+	border: 9px solid #fff;
+}
+
+.post .content{
+	position: relative;
+	padding-bottom: 33px;
+	min-height: 209px;
+}
+
+@media (max-width: 767px) {
+	.post .content{
+		padding-bottom: 1em;
+	}
+}
+
+.post .content p{
+	line-height: 1.3em;
+}
+
+.post .meta{
+	color: #339b7f;
+	font-size: .9em;
+}
+
+.post .meta > li{
+	position: relative;
+	text-transform: uppercase;
+}
+
+.post .meta > li:first-child:before{
+	display: none;
+}
+
+.post .meta > li:before{
+	content: " - ";
+	position: absolute;
+	left: -.25em;
+}
+
+
+.post-title{
+	margin: .1em 0 .3em 0;
+	color: $color_title;
+	font-size: 1.4em;
+	font-weight: 600;
+}
+
+.post .btn-showmore{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+}
+
+@media (max-width: 767px) {
+	.post .thumb{
+		margin-bottom: 1.5em;
+	}
+	.post .btn{
+		width: 100%;
+		line-height: 32px;
+	}
+	.post .btn-showmore{
+		position: inherit;
+	}
+	
+}

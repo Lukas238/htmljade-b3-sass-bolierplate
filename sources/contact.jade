@@ -1,0 +1,49 @@
+//- CONTACT PAGE
+extends _parts/_layout.jade
+block vars
+	- pageName = "page page-contact"
+	- active_menu = 3
+block content
+	#content
+		.container-fluid
+			.row
+				.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
+					.row
+						.col-sm-8
+							//- CONTENT
+							article.post
+							h1.page-title Contact
+							.alert.alert-danger
+								span.glyphicon.glyphicon-exclamation-sign
+								|  There was an unexpected error. Please try again later.
+							.alert.alert-success
+								span.glyphicon.glyphicon-ok
+								|  Thank you! Your message been sent.
+							p
+								| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+							form
+								.form-group.col-md-6
+									label.control-label(for='fullname') Full name
+									div
+										input#fullname.form-control.input-md(name='fullname', type='text', placeholder='')
+								.form-group.col-md-6
+									label.control-label(for='tel') Tel
+									div
+										input#tel.form-control.input-md(name='tel', type='text', placeholder='')
+								.form-group.col-md-6
+									label.control-label(for='cel') Cel
+									div
+										input#cel.form-control.input-md(name='cel', type='text', placeholder='')
+								.form-group.col-md-6
+									label.control-label(for='mail') Email
+									div
+										input#mail.form-control.input-md(name='mail', type='text', placeholder='')
+								.form-group.col-md-12
+									label.control-label(for='message') Message
+									div
+										textarea#message.form-control(name='message' rows="10")
+								.form-group.col-sm-12
+									button#btn-send.btn.btn-primary(name='btn-send') Send message
+						.col-sm-4
+							aside
+								

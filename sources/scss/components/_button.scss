@@ -1,0 +1,50 @@
+/*
+#Button Primary
+```
+<button type="button" class="btn btn-primary">Button</button>
+<a href="#" class="btn btn-primary">Link</a>
+```
+
+#Button Secondary
+```
+<button type="button" class="btn btn-secondary">Button</button>
+<a href="#" class="btn btn-secondary">Link</a>
+```
+	
+#Extra small button
+```
+<button type="button" class="btn btn-primary btn-xs">Button XS</button>
+```
+
+*/
+.btn-primary{
+	color: #fff;
+	background: $color-primary ;
+	text-transform: uppercase;
+}
+
+
+.btn-primary.active,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover,
+.open>.dropdown-toggle.btn-primary{
+	background: $color-secondary;
+}
+
+
+.btn-secondary{
+	color: #fff;
+	background: $color-tertiary;
+	text-transform: uppercase;
+}
+
+.btn-secondary.active,
+.btn-secondary.focus,
+.btn-secondary:active,
+.btn-secondary:focus,
+.btn-secondary:hover,
+.open>.dropdown-toggle.btn-secondary{
+	background: $color-quaternary;
+}

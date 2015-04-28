@@ -1,0 +1,47 @@
+/*
+#SIDEBAR MENU
+
+	
+	<div id="sidebar">
+	
+	
+		<div class="wdg wdg-taxonomy">
+			<h4 class="wdg-title">Categorias</h4>
+			<ul>
+				<li class="cat-1 active"><a href="#">Submenu 1</a></li>
+				<li class="cat-2"><a href="#">Submenu 2</a></li>
+				<li class="cat-3"><a href="#">Submenu 3</a></li>
+				<li class="cat-4"><a href="#">Submenu 4</a></li>
+			</ul>
+		</div>
+		
+		
+	</div>
+
+*/
+#sidebar .wdg-taxonomy ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar .wdg-taxonomy a{
+	color: #fff ;
+}
+
+#sidebar .wdg-taxonomy  li > a{
+	background: $mainmenu-submenu-bg;
+	padding: 10px 0;
+	margin-top: 2px;
+	display: block;
+	padding: 10px .1em 10px 1em;
+	text-decoration: none;
+}
+
+#sidebar .wdg-taxonomy li:hover > a{
+	background: $mainmenu-submenu-hover-bg;
+}
+
+#sidebar .wdg-taxonomy  li.active > a{
+	background: $mainmenu-submenu-active-bg;
+}

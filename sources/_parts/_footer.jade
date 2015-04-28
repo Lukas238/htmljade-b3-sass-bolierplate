@@ -1,0 +1,35 @@
+//- FOOTER
+footer#footer
+	#auspiciantes.hidden-xs
+		.container-fluid
+			.row
+				.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
+					h1 Advertisers
+					.row
+						- for (var x = 1; x <= 3; x++)
+							.col-sm-6.col-md-4
+								.auspiciante
+									.thumb
+										a(href='#', target='_blank')
+											img.img-responsive(src='http://placehold.it/262x147&text=Add', alt='Add')
+	#foot
+		.container-fluid
+			.row
+				.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
+					.row
+						.col-sm-4
+							+logo(class="text-only hidden-xs")
+						.col-sm-8
+							#footer-menu
+								nav.navbar
+									+main_menu(active_menu, active_cat, active_sub)
+					.row.hidden-xs
+						.col-sm-6
+							| Company Name @Copyright 2015
+						.col-sm-6
+							.share-box.pull-right
+								a.btn.btn-primary(href='https://www.facebook.com/', target='_blank') Follow us on Facebook!
+// SCRIPTS
+script(src='js/vendors.js')
+script(src='js/scripts.js')
+			

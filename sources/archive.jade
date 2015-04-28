@@ -1,0 +1,25 @@
+//- CONTACT PAGE
+extends _parts/_layout.jade
+block vars
+	- pageName = "page page-archive"
+	- active_menu = 2
+	- active_cat = 1
+block content
+	#content
+		.container-fluid
+			.row
+				.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
+					//- CONTENT
+					.row
+						.col-sm-8
+							h1.page-title
+								span.cat Pages
+								|	
+								span.subcat Archive
+							section.posts-list
+								- for (var x = 0; x < 5; x++)
+									+post
+								+pagination(1, 10)
+						.col-sm-4
+							aside#sidebar.sidebar
+								+get_news_cats

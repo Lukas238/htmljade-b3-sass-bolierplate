@@ -1,0 +1,137 @@
+/**********************
+	GLOBALS
+***********************/
+
+
+
+/*	BUTTONS
+***********************/
+.btn{
+	border: none;
+}
+
+.btn.btn-xs{
+	font-size: .7em;
+	padding: .2em .5em;
+}
+
+.post a.btn,
+a.btn.focus,
+a.btn:focus,
+a.btn:hover,
+.btn.focus,
+.btn:focus,
+.btn:hover{
+	color: #fff;
+}
+
+a.btn{
+	border: none;
+	text-decoration: none;
+}
+
+
+
+/*	POST-ZONA
+*****************************/
+.post-zona > h1{
+	color: $color-primary;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.post-zona .table .versus{
+	display: inline-block;
+	text-align: center;
+}
+
+
+
+/*	BANNERS
+*****************************/
+.banner{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 26px;
+	position: relative;
+}
+
+
+.banner .content{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/*	TEST-DESCRIPTION
+*****************************/
+.text-description{
+	color: #aaa;
+}
+
+/*	BORDER
+*****************************/
+.border{
+	border: 1px solid #ccc;
+	min-height: 2em; /* DELETE THIS */
+}
+
+/*	THUMB IMG
+*****************************/
+.thumb img{
+	width: 100%;
+}
+
+.post-single .thumb {
+	float: left;
+	margin-right: 1.5em;
+}
+
+/* HCARD
+****************************/
+.hcard{
+	font-size: .8em;
+	line-height: 1.1em;
+	margin-top: 8px;
+}
+
+.hcard .org{
+	font-weight: 700;
+}
+
+.hcard .email a{
+	color: #fff;
+}
+
+/* SHAREBOX */
+.share-box .hcard > .email{
+	display: block;
+}
+
+@media (max-width: 767px){
+	.share-box{
+		margin-top: 3em;
+		text-align: center;
+	}
+
+	.share-box .hcard{
+		font-size: 1em;
+		line-height: 1.4em;
+		margin-top: 1em;
+	}
+}
+
+
+/*	VERSUS
+************************/
+.versus{  
+	display: inline-block;
+	text-align: center;
+	background: #A9A9A9;
+	color: #FFF;
+	font-size: .55em;
+	text-transform: uppercase;
+	padding: .1em .3em;
+	border-radius: 1em;
+	line-height: 1.6em;
+	margin: 0 .5em;
+}

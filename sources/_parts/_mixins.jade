@@ -1,0 +1,105 @@
+//- MIXIMS
+
+- var arr_menu = {"menu":[{"id":1,"name":"index","url":"index.html","cats":[]},{"id":2,"name":"Pages","url":"","cats":[1,2]},{"id":3,"name":"Contact","url":"contact.html","cats":[]}],"cats":[{"id":1,"name":"Archive","url":"archive.html","subs":[]},{"id":2,"name":"Pages","url":"","subs":[1,2]}],"subs":[{"id":1,"name":"Page","url":"page.html"},{"id":2,"name":"Post","url":"single.html"}]}
+
+mixin logo()
+	#logo(class!="logo-ltf" + (attributes.class ? ' '+ attributes.class : ''))
+		a(href='#')
+			img.logo-image(src='http://placehold.it/84x84&text=Logo', alt='')
+			h1 Site Name
+			h2 Site legend
+
+//- Main Menu
+mixin main_menu(active_menu, active_cat, active_sub)
+	- active_menu = active_menu ||1
+	- active_cat = active_cat || null
+	- active_sub = active_sub || null
+	ul(class!="nav navbar-nav " + attributes.class)
+		each menu in arr_menu.menu
+			li(class="mnu-"+menu.id+(active_menu == menu.id ? ' active':''))
+				if( menu.url.length)
+					a(href=menu.url).mnu-item #{menu.name}
+				else
+					a.mnu-item #{menu.name}
+				if menu.cats.length
+					ul.submenu
+						each cat in arr_menu.cats
+							if menu.cats.indexOf(cat.id) != -1
+								li(class="cat-"+cat.id+(active_menu == menu.id && active_cat == cat.id ? ' active':''))
+									if( cat.url.length)
+										a(href=cat.url).mnu-item #{cat.name}
+									else
+										a.mnu-item #{cat.name}
+									if cat.subs.length
+										ul.submenu
+											each sub in arr_menu.subs
+												if cat.subs.indexOf(sub.id) != -1
+													li(class="sub-"+sub.id+(active_menu == menu.id && active_cat == cat.id && active_sub == sub.id ? ' active':''))
+														if( sub.url.length)
+															a(href=sub.url).mnu-item #{sub.name}
+														else
+															a.mnu-item #{sub.name}
+			
+			
+			
+mixin get_news_cats(id_menu, active_cat)
+	- id_menu = id_menu || 2
+	- active_cat = active_cat || 1
+	.wdg.wdg-taxonomy
+		h4.wdg-title Categories
+		ul
+			each menu in arr_menu.menu
+				if menu.id == id_menu
+					each cat in arr_menu.cats
+						if menu.cats.indexOf(cat.id) != -1
+							li(class="cat-"+cat.id+(active_menu == menu.id && active_cat == cat.id ? ' active':''))
+								a(href=cat.url) #{cat.name}
+			
+mixin sub_menu(active_sub)
+	.wdg.wdg-taxonomy
+		h4.wdg-title Subcategorias
+			ul.submenu
+				each sub in arr_menu.subs
+					li(id="#{sub.id}" class!=(active_sub == sub.id ? 'active':''))
+						a(href='#{sub.url}') #{sub.name}
+
+						
+mixin pagination(active_page, count)
+	- count = count || 5
+	- active_page = active_page | 1
+	nav
+		ul.pagination
+			li
+				a(href='#', aria-label='Previous')
+					span(aria-hidden='true') &laquo;
+			- for (var x = 1; x < count; x++)
+				li(class=(active_page == x ? 'active':''))
+					a(href='#') #{x}
+			li
+				a(href='#', aria-label='Next')
+					span(aria-hidden='true') &raquo;
+					
+mixin post(featured)
+	- featured = featured || false
+	article.post
+		.row
+			.col-sm-4
+				.thumb
+					a(href='single.html')
+						img(src='http://placehold.it/230x180&text=Thumb', alt='')
+			.col-sm-8
+				.content
+					if featured == true
+						a.btn.btn-secondary.btn-xs.pull-right(href="archive.html") View all &raquo;
+					ul.meta.list-inline
+						block postmeta
+							li.date
+								a(href='archive.html') 01/01/2015
+							li.category
+								a(href='archive.html') Category
+					h1.post-title
+						a(href='single.html') Lorem ipsum dolor sit amet.
+					a(href='single.html')
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, rem, obcaecati doloremque molestias rerum at quis eaque eveniet dicta itaque totam explicabo. Nesciunt, veritatis, iure, ut architecto harum quidem cum quos suscipit dolorum tempore quae necessitatibus nisi qui quisquam tempora asperiores officiis hic amet minima.
+				a.btn.btn-primary.btn-showmore(href='single.html') Show more

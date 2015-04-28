@@ -1,0 +1,24 @@
+//- HEADER
+header#header
+	#head
+		.container-fluid
+			.row
+				.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2 	
+					.row
+						.col-sm-8
+							+logo
+						.col-sm-4.clearfix
+							.share-box.hidden-xs
+								a.btn.btn-primary(href='https://www.facebook.com/', target='_blank') Follow us on Facebook!										
+	#main-menu
+		.container-fluid
+			.row
+				.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
+					nav.navbar
+						.navbar-header
+							a.navbar-toggle.collapsed(href='#footer-menu')
+								span.sr-only Toggle navigation
+								span.icon-bar
+								span.icon-bar
+								span.icon-bar
+						+main_menu(active_menu, active_cat, active_sub)(class='hidden-xs')

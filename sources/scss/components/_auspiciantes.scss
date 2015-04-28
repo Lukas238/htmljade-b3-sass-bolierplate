@@ -1,0 +1,40 @@
+/*
+#Auspiciantes 
+
+```
+<div id="auspiciantes">
+	
+	<div class="auspiciante">
+		<div class="thumb">
+			<a href="#" target="_blank">
+				<img src="http://placehold.it/280x180" alt="" class="img-responsive" >
+			</a>
+		</div>
+	</div>
+		
+</div>
+```
+*/
+#auspiciantes{
+	background: $color-tertiary;	
+	background-size: cover;
+	padding: 0 0 4em 0;
+}
+ 
+#auspiciantes h1{
+	color: #fff;
+	margin-bottom: .8em;
+	font-weight: bold;
+}
+
+#auspiciantes .auspiciante{
+	margin-bottom: 1em;
+}
+
+#auspiciantes .auspiciante .thumb{
+	border: 1px solid #4ec6e0;
+}
+
+#auspiciantes .auspiciante .thumb.overlay:before{
+	background-color: #141b22;
+}

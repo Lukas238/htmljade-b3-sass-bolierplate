@@ -1,0 +1,23 @@
+//- HOME PAGE
+extends _parts/_layout.jade
+block vars
+	- pageName = "page page-home"
+block content
+	#content
+		.container-fluid
+			.row
+				.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
+					.row
+						.col-sm-8
+							header.page-title
+								.row
+									.col-sm-8
+										h1 Featured posts
+									.col-sm-4.text-right
+										a.btn-cta.btn.btn-primary(href='#') Show all
+							section.posts-list
+							- for (var x = 0; x < 5; x++)
+								+post(true)
+						.col-sm-4
+							aside#sidebar.sidebar
+								+get_news_cats

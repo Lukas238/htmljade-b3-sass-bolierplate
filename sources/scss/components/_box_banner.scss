@@ -1,0 +1,65 @@
+/*
+#BOX-BANNER
+
+	<div class="box box-banner">
+		<img src="http://placehold.it/800x600" class="img-responsive" alt="" />
+		<div class="content">
+			<h1>BANNER TITLE</h1>
+			<a href="#" class="btn btn-primary">CTA</a>
+		</div>
+	</div>
+
+*/
+.box-banner{
+	position: relative;
+}
+
+.box-banner > img{
+	width: 100%;
+	display: block;
+}
+
+.box-banner .content{
+	position: absolute;
+	bottom: .5em;
+	left: 0;
+	width: 100%;
+}
+
+.box-banner h1{
+	color: #fff;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	font-family: 'BebasNeue', helvetica, arial, sans-serif;
+	font-size: 3em;
+	font-size: 7vw;
+	line-height: .9em;
+	font-weight: bold;
+	text-align: center;
+	
+}
+
+.box-banner .btn{
+	text-transform: uppercase;
+	display: block;
+	margin:15px 15px 10px 15px;
+	line-height: 32px;;
+}
+
+@media screen and (min-width: 992px){
+	.box-banner h1{
+		font-size: 4.5em;
+		float: left;
+		width: 70%;
+		text-align: left;
+		padding-left: .3em;
+	}
+	
+	.box-banner .btn{
+		float: right;	
+		margin-top: 6.5em;
+		margin-right: 2em;
+		display: inline-block;
+		line-height: inherit;
+	}
+	
+}

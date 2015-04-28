@@ -1,0 +1,76 @@
+/* 
+#LOGO
+
+##Default
+	<div id="logo" class="logo-ltf">
+		<a href="#">
+			<img src="http://placehold.it/84x84" alt="" class="logo-image"/>
+			<h1>Liga Todo F&uacute;tbol</h1>
+			<h2>Campeonatos f&uacute;tbol cinco</h2>
+		</a>
+	</div>
+	
+##Text-only	
+	<div id="logo" class="logo-ltf text-only">
+		<a href="#">
+			<img src="http://placehold.it/84x84" alt="" class="logo-image"/>
+			<h1>Liga Todo F&uacute;tbol</h1>
+			<h2>Campeonatos f&uacute;tbol cinco</h2>
+		</a>
+	</div>
+ 
+*/
+.logo-ltf{
+	font-family: 'BebasNeue', helvetica, arial, sans-serif;
+	
+}
+
+.logo-ltf a {
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	padding-right: 7em;
+	text-decoration: none;
+	color: inherit;
+}
+
+.logo-ltf a .logo-image{
+	display: block;
+	position: absolute;
+	width: 6em;
+	height: 6em;
+	top: 50%;
+	margin-top: -3em;
+	right: 0;
+}
+
+.logo-ltf h1{
+	font-size: 3.65em;
+	font-weight: bold;
+	margin: 0;
+}
+
+.logo-ltf h2{
+	color: $color-primary;
+	margin: 0;
+	padding-top: 5px;
+	border-top: 1px solid $color-secondary;
+	font-size: 1.48em;
+	font-weight: bold;
+	letter-spacing: .2em;
+}
+
+@media (max-width: 767px) {
+	.logo-ltf{
+		text-align: center;
+		font-size: 3vw;
+	}
+}
+
+.logo-ltf.text-only a{
+	padding: 0;
+}
+
+.logo-ltf.text-only .logo-image{
+	display: none;
+}

@@ -1,0 +1,24 @@
+/*
+#Box Primary
+	
+	<div class="box box-primary">
+		<img src="http://placehold.it/500x300" alt="">
+	</div>
+	
+*/
+.box-primary{
+	position: relative;
+	margin-bottom: 26px;
+}
+
+.box-primary:after{
+	display: block;
+	content: '';
+	width: 100%;
+	height: 10px;
+	background: #212c37;
+	margin-top: 1px;
+	position: absolute;
+	bottom: -11px;
+	left: 0;
+}

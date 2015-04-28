@@ -1,0 +1,50 @@
+{
+  "name": "liga-todo-futbol-frontend",
+  "title": "Liga Todo Futbol - Frontend",
+  "version": "1.0.0",
+  "main": "sources/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://Lukas238@bitbucket.org/Lukas238/liga-todo-futbol-frontend.git"
+  },
+  "author": "Lucas Dasso",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "browser-sync": "^1.6.5",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^1.0.1",
+    "gulp-header": "^1.2.2",
+    "gulp-imagemin": "^2.2.0",
+    "gulp-jshint": "^1.9.0",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^1.1.0",
+    "gulp-styledocco": "0.0.3",
+    "gulp-uglify": "^1.0.1"
+  },
+  "dependencies": {
+    "event-stream": "^3.3.0",
+    "fs": "0.0.2",
+    "glob": "^5.0.5",
+    "gulp-concat": "^2.5.2",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-jade": "^1.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-styledocco": "0.0.3",
+    "gulp-util": "^3.0.4",
+    "jshint-stylish": "^1.0.1",
+    "markdown-js": "0.0.3",
+    "node-notifier": "^4.2.1",
+    "path": "^0.11.14",
+    "styledocco": "^0.6.6"
+  },
+  "directories": {
+    "doc": "docs"
+  }
+}

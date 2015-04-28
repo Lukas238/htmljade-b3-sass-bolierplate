@@ -1,0 +1,27 @@
+{
+  "name": "liga-todo-futbol-frontend",
+  "version": "0.1.0",
+  "authors": [
+    "Lucas Dasso <dassolucas@c238.com.ar>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "sources/vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "https://github.com/twbs/bootstrap.git#~3.3.4",
+    "jquery": "https://github.com/jquery/jquery.git#~2.1.3",
+    "font-awesome": "https://github.com/FortAwesome/Font-Awesome.git#~4.3.0",
+    "slick-carousel": "~1.5.0",
+    "bootstrap-sass-official": "~3.3.4"
+  }
+}

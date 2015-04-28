@@ -1,0 +1,162 @@
+/*
+#Footer menu
+	
+	<div id="foot">
+
+		<div id="footer-menu">
+			<nav class="navbar">
+				<ul class="nav navbar-nav">
+					<li class="mnu-1"><a href="#">Menu 1</a></li>
+					<li class="mnu-2 active">
+						<a href="#">Menu 2</a>
+						<ul class="submenu">
+							<li class="cat-1"><a href="#">Submenu 1</a></li>
+							<li class="cat-2 active">
+								<a href="#">Submenu 2</a>
+								<ul class="submenu">
+									<li class="sub-1"><a href="#">Submenu 1</a></li>
+									<li class="sub-2 active"><a href="#">Submenu 2</a></li>
+									<li class="sub-3"><a href="#">Submenu 3</a></li>
+									<li class="sub-4"><a href="#">Submenu 4</a></li>
+								</ul>
+							</li>
+							<li class="cat-3"><a href="#">Submenu 3</a></li>
+							<li class="cat-4"><a href="#">Submenu 4</a></li>
+						</ul>
+					</li>
+					<li class="mnu-3"><a href="#">Menu 3</a></li>
+					<li class="mnu-4"><a href="#">Menu 4</a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</div>
+
+*/
+
+@media (max-width: 767px) {
+
+	#footer-menu{
+		margin: -2em -15px 0 -15px;
+	}
+
+	#footer-menu .navbar-nav {
+		margin: 0;
+	}
+
+	#footer-menu li > .submenu{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	#footer-menu .navbar-nav a{
+		text-transform: uppercase;
+		padding: .8em 1.2em;
+		font-size: .9em;
+		text-align: center;
+		color: #fff;
+		border-bottom: 1px solid $color-tertiary;
+		text-decoration: none;
+		display: block;
+		background: $color-tertiary;
+	}
+
+	#footer-menu .navbar-nav > li > a{
+		border-bottom: 1px solid #3c4e61;
+	}
+
+	#footer-menu li.active > a{
+		background: $color-menu-active;
+	}
+
+	#footer-menu .submenu li > a{
+		background: #1a232f;
+	}
+	
+	#footer-menu .submenu li > a:before{
+		content: "\f0da";
+		font-family: fontawesome;
+		margin-right: .5em;
+		color: #3c4e61;
+	}
+
+	#footer-menu .submenu .submenu li > a:before{
+		content: "\f105";
+		color: #888;
+	}
+
+
+	#footer-menu .submenu .submenu li > a{
+		background: inherit;
+		text-transform: inherit;
+		color: #bbb;
+	}
+
+	#footer-menu .submenu li.active > a,
+	#footer-menu .submenu .submenu li.active > a,
+	#footer-menu .submenu li.active > a:before,
+	#footer-menu .submenu .submenu li.active > a:before{
+		color: $color-secondary;
+	}
+	
+}
+
+@media (min-width: 768px){
+
+	#footer-menu{
+		margin-top: 1.5em;
+		text-align: right;
+	}
+
+	#footer-menu .navbar{
+		min-height: 0;
+		margin-bottom: 0;
+	}
+
+	#footer-menu .navbar-nav > li{
+		float: none;
+		display: inline-block;
+	}
+	
+	#footer-menu .navbar-nav > li > a{
+		background: none;
+	}
+
+
+	#footer-menu .nav>li>a{
+		padding: 0;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: .8em;
+		border-bottom: 1px solid transparent;
+	}
+
+	#footer-menu .navbar-nav a:focus,
+	#footer-menu .navbar-nav a:hover,
+	#footer-menu .navbar-nav>.active>a,
+	#footer-menu .navbar-nav>.active>a:focus,
+	#footer-menu .navbar-nav>.active>a:hover{
+		background: none;
+		border-bottom: 1px solid #339b7f;
+	}
+
+	#footer-menu{
+		margin-top: 0;
+		float: right;
+	}
+		
+	#footer-menu .submenu{
+		display: none;
+	}
+
+	#footer-menu .navbar-nav {
+		float: right;
+		text-align: right;
+	}
+	
+	#footer-menu .nav>li>a{
+		margin-left: 2em;
+	}
+
+}
