@@ -32,7 +32,7 @@
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus{
-	background: $color-primary;
+	background: $base-color-1;
 	border-color: #ddd;
 	color: #fff;
 }
@@ -41,6 +41,6 @@
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus{
-	background: $color-secondary;
+	background: $base-color-2;
 	color: #fff;
 }

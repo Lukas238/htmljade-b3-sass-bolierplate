@@ -1,81 +1,52 @@
 /**********************
 	VARIABLES
 ***********************/
+@import "_colors"; 
 
-$color-giveitup: #394D62;
-$color-giveupthree: #7798B0;
-$color-igiveup: #C3BCDD;
-$color-aboutgivingup: #AE6393;
-$color-nevergiveup: #653253;
-
-
-
-$color-primary: #FE4365;
-$color-secondary: #FC9D9A; 
-$color-tertiary: #83AF9B;
-$color-quaternary: #C8C8A9;
-$color-5: #F9CDAD;
-
-$color_title: $color-tertiary;
-
-$color-menu-hove: $color-tertiary;
-$color-menu-active: #F9CDAD;
-$color-sub-active-text: $color-secondary;
-
-$mainmenu-bg: #FC9D9A;
-$mainmenu-nav-bg: #FE4365;
-$mainmenu-nav-hover-bg: #FE4365;
-$mainmenu-nav-active-bg: #FC9D9A;
-$mainmenu-nav-active: #83AF9B;
-
-$mainmenu-submenu-bg: #FC9D9A;
-$mainmenu-submenu-hover-bg:#FC9D9A;
-$mainmenu-submenu-active-bg: #FE4365;
-$mainmenu-submenu-active: #fff;
 
 
 
 $body-bg: #fff;
 
-$link-color: $color-nevergiveup;
-$link-color-hover: $color-aboutgivingup;
+$link-color: $base-color-5;
+$link-color-hover: $base-color-4;
 
-$header-bg: $color-giveitup;
+$header-bg: $base-color-1;
 
 $logo-name: #fff;
-$logo-legend: lighten($color-aboutgivingup, 25%);
+$logo-legend: lighten($base-color-4, 25%);
  
  
-$page-title: $color-giveupthree;
+$page-title: $base-color-2;
  
 $post-title: $page-title;
-$post-meta: $color-aboutgivingup;
+$post-meta: $base-color-4;
  
-$btn-primary-bg: $color-aboutgivingup;
+$btn-primary-bg: $base-color-4;
 $btn-primary-bg-hover: darken($btn-primary-bg, 15%);
 $btn-primary-color: #fff;
  
-$btn-secondary-bg: $color-giveupthree;
-$btn-secondary-bg-hover: darken($color-giveupthree, 15%);;
+$btn-secondary-bg: $base-color-2;
+$btn-secondary-bg-hover: darken($base-color-2, 15%);;
 $btn-secondary-color: #fff;
  
-$menu-bg: $color-giveupthree;
+$menu-bg: $base-color-2;
 $menu-nav-bg: darken($menu-bg, 10%);
-$menu-nav-bg-hover: lighten($color-aboutgivingup, 15%);
-$menu-nav-bg-active: $color-aboutgivingup;
+$menu-nav-bg-hover: lighten($base-color-4, 15%);
+$menu-nav-bg-active: $base-color-4;
 $menu-nav-color: #fff;
 $menu-nav-color-hover: $menu-nav-color;
 $menu-nav-color-active: $menu-nav-color;
 
-$menu-sub-bg: rgba( red($menu-nav-bg-hover), green($menu-nav-bg-hover), blue($menu-nav-bg-hover), .8);
+$menu-sub-bg: rgba( $menu-nav-bg-hover, .8);
 $menu-sub-bg-hover: lighten($menu-sub-bg, 15%);
-$menu-sub-bg-active: $color-aboutgivingup;
+$menu-sub-bg-active: $base-color-4;
 $menu-sub-color: #fff;
 $menu-sub-color-hover: $menu-sub-color;
 $menu-sub-color-active: $menu-nav-bg-active;
 
  
-$footer-bg: $color-giveitup;
+$footer-bg: $base-color-1;
 $footer-color: #fff;
 //$footer-nav-bg: ;
 $footer-nav-bg-active: $menu-nav-bg-active;
@@ -84,12 +55,12 @@ $footer-nav-color: #fff;
 
 $footer-sub-bg: $menu-nav-bg-hover;
 $footer-sub-bg-hover: lighten($menu-sub-bg, 15%);
-$footer-sub-bg-active: $color-aboutgivingup;
+$footer-sub-bg-active: $base-color-4;
 $footer-sub-color: #fff;
 $footer-sub-color-hover: $footer-sub-color;
 $footer-sub-color-active: $footer-nav-bg-active;
 
  
-$advertisers-bg: lighten($color-igiveup, 10%);
-$advertisers-color: $color-aboutgivingup;
-$ads-border: $color-aboutgivingup;
+$advertisers-bg: darken($base-color-3, 10%);
+$advertisers-color: $base-color-4;
+$ads-border: $base-color-4;

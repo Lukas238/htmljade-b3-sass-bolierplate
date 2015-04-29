@@ -49,19 +49,19 @@
 }
 
 .table-striped > tbody > tr{
-	background: #d1d3d4;
+	background: $base-color-3;
 }
 
 .table-striped > tbody > tr:nth-of-type(odd){
-	background: #e6e7e8;
+	background: darken($base-color-3, 10%);
 }
 
 .table-hover > tbody > tr:hover{
-	background: #e6e7e8;
+	background: $base-color-3;
 }
 
 .table thead th{
-	background-color: $color-tertiary;
+	background-color: $base-color-2;
 	color: #fff;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -154,7 +154,7 @@
 	width: 40%;
 	height: 100%;
 	padding: .7em .3em;
-	background-color: $color-tertiary;
+	background-color: $base-color-2;
 	color: #fff;
 	font-weight: normal;
 	text-transform: uppercase;
