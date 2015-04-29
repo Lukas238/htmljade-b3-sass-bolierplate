@@ -17,6 +17,7 @@ var gulp = require('gulp'),
 	fs = require('fs'),
 	path = require('path'),
 	glob = require('glob'),
+	changed = require('gulp-changed'),
 	package = require('./package.json');
 	
 
@@ -79,11 +80,13 @@ gulp.task('html', function () {
 	
 	/* HTML */
 	gulp.src(config.src+'/*.html')
+	.pipe(changed(config.dist))
 	.pipe(gulp.dest(config.dist));
 	
 	/* JADE */
 	gulp.src([config.src+'/*.jade', '!'+config.src+'/_*.jade'])
-    .pipe(jade({
+    //.pipe(changed(config.dist, {extension: '.html'}))
+	.pipe(jade({
 		pretty: true
 		}
 	))
@@ -110,6 +113,7 @@ gulp.task('css', ['sass-includes'], function () {
 //compressing images & handle SVG files
 gulp.task('images_optimize', function(tmp) {
     return gulp.src([config.src+'/images/*.jpg', config.src+'/images/*.png'])
+	.pipe(changed(config.dist+'/images'))
     .pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
 	.pipe(gulp.dest(config.dist+'/images'));
 });
@@ -123,6 +127,7 @@ gulp.task('images', ['images_optimize'], function() {
 
 gulp.task('fonts' ,function () {
     gulp.src(config.src+'/fonts/*')
+	.pipe(changed(config.dist+'/fonts'))
     .pipe(gulp.dest(config.dist+'/fonts'));
 });
 
@@ -157,12 +162,14 @@ gulp.task('vendors', function(){
 		config.bowerPath+'/font-awesome/fonts/*',
 		config.bowerPath+'/slick-carousel/slick/fonts/*'
 	])
+	.pipe(changed(config.dist+'/fonts'))
 	.pipe(gulp.dest(config.dist+'/fonts/'));
 	
 	/* MISC */
 	gulp.src([
 		config.bowerPath+'/slick-carousel/slick/*.gif'
 	])
+	.pipe(changed(config.dist+'/css'))
     .pipe(gulp.dest(config.dist+'/css/'));    
 	
 });
@@ -173,6 +180,7 @@ gulp.task('extra',function(){
 	gulp.src([
 		config.src+'/favicon.ico'
 	])
+	.pipe(changed(config.dist))
     .pipe(gulp.dest(config.dist));    
 });
 
