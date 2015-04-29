@@ -1,6 +1,6 @@
 //- MIXIMS
 
-- var arr_menu = {"menu":[{"id":1,"name":"index","url":"index.html","cats":[]},{"id":2,"name":"Pages","url":"","cats":[1,2]},{"id":3,"name":"Contact","url":"contact.html","cats":[]}],"cats":[{"id":1,"name":"Archive","url":"archive.html","subs":[]},{"id":2,"name":"Pages","url":"","subs":[1,2]}],"subs":[{"id":1,"name":"Page","url":"page.html"},{"id":2,"name":"Post","url":"single.html"}]}
+- var arr_menu = {"menu":[{"id":1,"name":"index","url":"index.html","cats":[]},{"id":2,"name":"Page","url":"page.html","cats":[]},{"id":3,"name":"Post","url":"single.html","cats":[]},{"id":4,"name":"Archive","url":"archive.html","cats":[]},{"id":5,"name":"Contact","url":"contact.html","cats":[]},{"id":6,"name":"Menu","url":"","cats":[1,2,3,4]}],"cats":[{"id":1,"name":"Submenu 1","url":"","subs":[1,2]},{"id":2,"name":"Submenu 2","url":"","subs":[3,4,5]},{"id":3,"name":"Submenu 3","url":"","subs":[]}],"subs":[{"id":1,"name":"Sub-submenu 1","url":""},{"id":2,"name":"Sub-submenu 2","url":""},{"id":3,"name":"Sub-submenu 3","url":""},{"id":4,"name":"Sub-submenu 4","url":""},{"id":5,"name":"Sub-submenu 5","url":""}]};
 
 mixin logo()
 	#logo(class!="logo-ltf" + (attributes.class ? ' '+ attributes.class : ''))
@@ -98,8 +98,7 @@ mixin post(featured)
 							li.category
 								a(href='archive.html') Category
 					h1.post-title
-						a(href='single.html') Lorem ipsum dolor sit amet.
-					a(href='single.html')
-						p
-							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, rem, obcaecati doloremque molestias rerum at quis eaque eveniet dicta itaque totam explicabo. Nesciunt, veritatis, iure, ut architecto harum quidem cum quos suscipit dolorum tempore quae necessitatibus nisi qui quisquam tempora asperiores officiis hic amet minima.
+						| Lorem ipsum dolor sit amet.
+					p
+						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, rem, <strong>obcaecati</strong> doloremque molestias rerum at quis eaque eveniet dicta itaque totam explicabo. Nesciunt, <a href="#">veritatis</a>, iure, ut architecto harum quidem cum quos suscipit dolorum tempore quae necessitatibus nisi qui quisquam tempora asperiores officiis hic amet minima.
 				a.btn.btn-primary.btn-showmore(href='single.html') Show more

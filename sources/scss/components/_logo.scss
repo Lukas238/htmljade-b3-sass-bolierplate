@@ -22,7 +22,7 @@
 */
 .logo-ltf{
 	font-family: 'BebasNeue', helvetica, arial, sans-serif;
-	
+	color: $logo-name;
 }
 
 .logo-ltf a {
@@ -31,7 +31,7 @@
 	position: relative;
 	padding-right: 7em;
 	text-decoration: none;
-	color: inherit;
+	color: $logo-name;
 }
 
 .logo-ltf a .logo-image{
@@ -51,10 +51,10 @@
 }
 
 .logo-ltf h2{
-	color: $color-primary;
+	color: $logo-legend;
 	margin: 0;
 	padding-top: 5px;
-	border-top: 1px solid $color-secondary;
+	border-top: 1px solid darken($logo-legend, 10%);
 	font-size: 1.48em;
 	font-weight: bold;
 	letter-spacing: .2em;

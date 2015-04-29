@@ -18,8 +18,8 @@
 
 */
 .btn-primary{
-	color: #fff;
-	background: $color-primary ;
+	color: $btn-primary-color;
+	background: $btn-primary-bg;
 	text-transform: uppercase;
 }
 
@@ -30,13 +30,13 @@
 .btn-primary:focus,
 .btn-primary:hover,
 .open>.dropdown-toggle.btn-primary{
-	background: $color-secondary;
+	background: $btn-primary-bg-hover;
 }
 
 
 .btn-secondary{
-	color: #fff;
-	background: $color-tertiary;
+	color: $btn-secondary-color;
+	background: $btn-secondary-bg;
 	text-transform: uppercase;
 }
 
@@ -46,5 +46,5 @@
 .btn-secondary:focus,
 .btn-secondary:hover,
 .open>.dropdown-toggle.btn-secondary{
-	background: $color-quaternary;
+	background: $btn-secondary-bg-hover;
 }

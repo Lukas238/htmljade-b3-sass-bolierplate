@@ -10,7 +10,7 @@ body{
 /*	HEADER
 **********************/
 #header{
-	background: $color-5;
+	background: $header-bg;
 	color: #fff;
 }
 
@@ -44,9 +44,9 @@ body{
 /*	FOOT
 **********************/
 #foot{
-	background: $color-5;
+	background: $footer-bg;
 	padding: 2em 0;
-	color: $color-tertiary;
+	color: $footer-color;
 }
 
 #foot .logo-ltf{

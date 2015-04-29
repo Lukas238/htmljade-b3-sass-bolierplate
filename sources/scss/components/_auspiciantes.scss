@@ -16,13 +16,13 @@
 ```
 */
 #auspiciantes{
-	background: $color-tertiary;	
+	background: $advertisers-bg;	
 	background-size: cover;
 	padding: 0 0 4em 0;
 }
  
 #auspiciantes h1{
-	color: #fff;
+	color: $advertisers-color;
 	margin-bottom: .8em;
 	font-weight: bold;
 }
@@ -32,9 +32,5 @@
 }
 
 #auspiciantes .auspiciante .thumb{
-	border: 1px solid #4ec6e0;
-}
-
-#auspiciantes .auspiciante .thumb.overlay:before{
-	background-color: #141b22;
-}
+	border: 1px solid $ads-border;
+} 

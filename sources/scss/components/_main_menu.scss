@@ -45,18 +45,25 @@
 ```
 */
 #main-menu{
-	background: $mainmenu-bg;
+	background: $menu-bg;
 	position: relative;
 	z-index: 100;
 }
 
+#main-menu .navbar-toggle{
+	background: $menu-nav-bg-hover;
+}
+
 #main-menu .navbar-toggle .icon-bar{
-	background: #fff;
+	background: $menu-nav-color;
 }
 
 #main-menu .navbar{
-	margin: 0 0 -1px 0;
+	margin: 0;
 	min-height: 40px;
+	border: 0;
+	border-radius: 0;
+	background: $menu-nav-bg;
 }
 
 #main-menu .navbar-collapse{
@@ -80,7 +87,7 @@
 #main-menu .navbar-nav .mnu-item:active,
 #main-menu .navbar-nav li:focus > .mnu-item,
 #main-menu .navbar-nav li:hover > .mnu-item{
-	background: $mainmenu-nav-hover-bg;
+	background: $menu-nav-bg-hover;
 }
 
 #main-menu .navbar-nav>.active > .mnu-item,
@@ -88,7 +95,7 @@
 #main-menu .navbar-nav>.active > .mnu-item:active,
 #main-menu .navbar-nav>.active:focus > .mnu-item,
 #main-menu .navbar-nav>.active:hover > .mnu-item{ 
-	background: $mainmenu-nav-bg;
+	background: $menu-nav-bg-active;
 }
 
 #main-menu  .navbar-nav {
@@ -96,12 +103,6 @@
 }
 #main-menu  .navbar-nav  > li {
 	width: 16.6%;
-	margin-right: 2px;
-}
-
-
-#main-menu li > .submenu{
-	display: none;
 }
 
 #main-menu .submenu li{
@@ -125,7 +126,7 @@
 }
 
 #main-menu .navbar-nav .submenu > li.active > .mnu-item{
-	color: $mainmenu-submenu-active;
+	background: $menu-sub-color-active;
 }
 
 #main-menu li:hover > .submenu .submenu{
@@ -141,9 +142,10 @@
 	text-align: left;
 	padding-left: 1em;
 	padding-right: .1em;
-	background: $mainmenu-submenu-bg;
+	color: $menu-sub-color;
+	background: $menu-sub-bg;
 }
 
 #main-menu .navbar-nav .submenu > li.active:hover > .mnu-item{
-  color: #fff;
+  color: $menu-nav-color;
 }

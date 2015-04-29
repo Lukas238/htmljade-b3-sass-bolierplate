@@ -3,6 +3,21 @@
 ***********************/
 
 
+/*	LINKS
+************************/
+a{
+	color: $link-color;
+}
+
+a:hover{
+	color: $link-color-hover;
+	text-decoration: none;
+}
+
+p a:hover{
+	border-bottom: 1px solid;
+}
+
 
 /*	BUTTONS
 ***********************/

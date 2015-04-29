@@ -24,8 +24,13 @@ h1.page-title{
 	border-bottom: 1px solid #e6e7e8;
 	padding-bottom: 15px;
 	margin-bottom: 15px;	
-	color: $color_title;
+	color: $page-title;
 	text-transform: uppercase;
+}
+
+header.page-title h1,
+h1.page-title{
+  text-shadow: 2px 2px 2px rgba(0,0,0, .2);
 }
 
 .page-title .cat{
@@ -36,15 +41,18 @@ h1.page-title{
 }
 
 header.page-title .btn{
-	margin-top: 20px;
+	margin-top: 25px;
 }
 
 @media (max-width: 767px) {
+	.page-title{
+		text-align: center;
+	}
+	
 	header.page-title h1{ 
 		border-bottom: 1px solid #e6e7e8;
 		padding-bottom: 15px;
 		margin-bottom: 15px;	
-		
 	}
 	
 	header.page-title .btn-cta{

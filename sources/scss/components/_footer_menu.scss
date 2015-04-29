@@ -56,48 +56,48 @@
 		font-size: .9em;
 		text-align: center;
 		color: #fff;
-		border-bottom: 1px solid $color-tertiary;
+		border-bottom: 1px solid lighten($footer-nav-bg-active, 10%);
 		text-decoration: none;
 		display: block;
-		background: $color-tertiary;
+		background: $footer-bg	;
 	}
 
 	#footer-menu .navbar-nav > li > a{
-		border-bottom: 1px solid #3c4e61;
+		border-bottom: 1px solid lighten($footer-bg, 10%);
 	}
 
 	#footer-menu li.active > a{
-		background: $color-menu-active;
+		background: $footer-nav-bg-active;
 	}
 
 	#footer-menu .submenu li > a{
-		background: #1a232f;
+		background: $footer-sub-bg;
 	}
 	
 	#footer-menu .submenu li > a:before{
 		content: "\f0da";
 		font-family: fontawesome;
 		margin-right: .5em;
-		color: #3c4e61;
+		color: darken($footer-sub-bg, 25%);
 	}
 
 	#footer-menu .submenu .submenu li > a:before{
 		content: "\f105";
-		color: #888;
+		color: darken($footer-sub-bg, 25%);
 	}
 
-
 	#footer-menu .submenu .submenu li > a{
-		background: inherit;
+		background: $color-igiveup;
 		text-transform: inherit;
-		color: #bbb;
+		color: $color-giveitup;
 	}
 
 	#footer-menu .submenu li.active > a,
 	#footer-menu .submenu .submenu li.active > a,
 	#footer-menu .submenu li.active > a:before,
 	#footer-menu .submenu .submenu li.active > a:before{
-		color: $color-secondary;
+		background: $footer-sub-bg-active;
+		color: #fff;
 	}
 	
 }
@@ -127,7 +127,7 @@
 	#footer-menu .nav>li>a{
 		padding: 0;
 		text-transform: uppercase;
-		color: #fff;
+		color: $footer-nav-color;
 		font-size: .8em;
 		border-bottom: 1px solid transparent;
 	}
@@ -137,8 +137,8 @@
 	#footer-menu .navbar-nav>.active>a,
 	#footer-menu .navbar-nav>.active>a:focus,
 	#footer-menu .navbar-nav>.active>a:hover{
-		background: none;
-		border-bottom: 1px solid #339b7f;
+		background: none; 	
+		border-bottom: 1px solid $footer-nav-bg-active;
 	}
 
 	#footer-menu{

@@ -26,11 +26,11 @@
 }
 
 #sidebar .wdg-taxonomy a{
-	color: #fff ;
+	color: $menu-sub-color;
 }
 
 #sidebar .wdg-taxonomy  li > a{
-	background: $mainmenu-submenu-bg;
+	background: $menu-sub-bg;
 	padding: 10px 0;
 	margin-top: 2px;
 	display: block;
@@ -39,9 +39,9 @@
 }
 
 #sidebar .wdg-taxonomy li:hover > a{
-	background: $mainmenu-submenu-hover-bg;
+	background: $menu-sub-bg-hover;
 }
 
 #sidebar .wdg-taxonomy  li.active > a{
-	background: $mainmenu-submenu-active-bg;
+	background: $menu-sub-bg-active;
 }
