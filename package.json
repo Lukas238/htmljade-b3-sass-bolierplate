@@ -1,6 +1,6 @@
 {
-  "name": "liga-todo-futbol-frontend",
-  "title": "Liga Todo Futbol - Frontend",
+  "name": "htmljade-b4-sass-boilerplate",
+  "title": "htmljade-b4-sass-boilerplate",
   "version": "1.0.0",
   "main": "sources/index.html",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://Lukas238@bitbucket.org/Lukas238/liga-todo-futbol-frontend.git"
+    "url": "https://github.com/Lukas238/htmljade-b3-sass-bolierplate.git"
   },
   "author": "Lucas Dasso",
   "license": "ISC",
